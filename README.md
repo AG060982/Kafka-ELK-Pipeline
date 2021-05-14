@@ -88,7 +88,7 @@ volumes:
   elasticsearch-data-volume:
     driver: local
 ```
-===================================================================================================
+===================================
 Open the required port of firewall
 ```
 sudo firewall-cmd --permanent --add-port=9092/tcp
@@ -126,9 +126,9 @@ ea4a13d84c1a        docker.elastic.co/elasticsearch/elasticsearch:7.4.0   "/usr/
 afdece028175        zookeeper                                             "/docker-entrypoin..."   18 minutes ago      Up 18 minutes       2888/tcp, 3888/tcp, 0.0.0.0:2181->2181/tcp, 8080/tcp   zookeeper
 73399d09fc8c        hlebalbau/kafka-manager:stable                        "/kafka-manager/bi..."   18 minutes ago      Up 18 minutes       0.0.0.0:9000->9000/tcp                                 kakfa-manager
 ```
-====================================
+
 Installing and Configuring Filebeat:
-====================================
+
 ```
 sudo curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-7.9.3-linux-x86_64.tar.gz 
 sudo tar xzvf filebeat-7.9.3-linux-x86_64.tar.gz
@@ -156,9 +156,9 @@ output.kafka:
   codec.json:
     pretty: false
 ```
-========================================================
+
 Installing and configuring logstash
-========================================================
+
 https://www.elastic.co/guide/en/logstash/current/installing-logstash.html     -- to install
 
 Post installation
@@ -194,4 +194,4 @@ Start The Logstash
 
 Creating the Topic : Elasticsearch on Kafka.
 	1. Login to kafka-manager 127.0.0.1:9000
-![image](https://user-images.githubusercontent.com/31564143/118267968-6842a380-b4da-11eb-8a19-07cb05ca3e34.png)
+
