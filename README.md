@@ -1,5 +1,5 @@
 # Kafka-ELK-Pipeline
-Setup LogData Pipeline using FileBeat->kafka->logstash->ELK in 15 Minutes (POC)
+# Setup LogData Pipeline using FileBeat->kafka->logstash->ELK in 15 Minutes (POC)
 
 
 
@@ -117,7 +117,7 @@ To get The Status
 ```
 # docker ps
 ```
-====== Docker Output ======
+Docker Output 
 ```
 CONTAINER ID        IMAGE                                                 COMMAND                  CREATED             STATUS              PORTS                                                  NAMES
 34ae842aa9eb        docker.elastic.co/kibana/kibana:7.4.0                 "/usr/local/bin/du..."   18 minutes ago      Up 18 minutes       0.0.0.0:5601->5601/tcp                                 kibana
@@ -185,12 +185,12 @@ output {
 }
 
 ```
-======
+
 Start The Logstash
 ```
 #sudo systemctl start logstash
 ```
-=======
+
 
 Creating the Topic : Elasticsearch on Kafka.
 	1. Login to kafka-manager 127.0.0.1:9000
